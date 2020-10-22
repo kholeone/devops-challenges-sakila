@@ -1,0 +1,32 @@
+1. SELECT * FROM actor;
+
+2. JOHN SUVARI
+
+SELECT * FROM actor WHERE first_name  LIKE "%JOHN";
+
+3. CHRISTIAN NEESON, JAYNE NEESON
+
+SELECT * FROM actor WHERE last_name  LIKE "%NEESON";
+
+4. SELECT * FROM actor WHERE actor_id LIKE "%0";
+
+5. A Beautiful Drama of a Dentist And a Composer who must Battle a Sumo Wrestler in The First Manned Space Station
+
+SELECT * FROM film WHERE film_id LIKE "%100";
+
+6. SELECT * FROM film WHERE rating LIKE "%R";
+
+7. SELECT * FROM film WHERE rating NOT LIKE "%R";
+
+8. SELECT * FROM film ORDER BY length LIMIT 10;
+
+9. SELECT * FROM film ORDER BY length DESC; 
+
+10. SELECT * FROM film WHERE special_features LIKE "Deleted Scenes";
+
+11. 
+
+12.
+
+13. SELECT * FROM film_actor t1 JOIN film t2 ON t1.actor_id=t2.film_id ORDER BY actor_id ASC;
+
